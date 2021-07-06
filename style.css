@@ -76,32 +76,109 @@ h6 {
 
 /* --------------------------------------------------------------------------------------------------------------------- */
 
+:root {
+  --box_shadow_btn: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  --page_size: 1440px;
+  --content_size: 1200px;
+  --color_burgundy: #ec5136;
+  --color_yellow: #fadd34;
+  --color_blue: #4dd7c3;
+  --color_text_dark: #50595b;
+  --color_text_light: #ffffff;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+.content {
+  max-width: 1420px;
+  height: 100%;
+  /* background-color: #50595b; */
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
 .d1 {
   width: 800px;
   height: 800px;
   border-radius: 50%;
-  border: 200px solid #fadd34;
+  border: 200px solid var(--color_yellow);
   position: absolute;
   left: -500px;
   top: -85px;
   opacity: 80%;
 }
+.d4 {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 150px solid var(--color_yellow);
+  position: absolute;
+  opacity: 80%;
+  right: -250px;
+  bottom: 0px;
+}
 .d2 {
-  width: 300px;
-  height: 150px;
+  width: 330px;
+  height: 165px;
   border-radius: 50% 50% 0 0 / 100% 100% 0 0;
   overflow: hidden;
-  background: #ec5136;
+  background: var(--color_burgundy);
   position: absolute;
-  left: 100px;
-  top: 50px;
+  left: 85px;
+  top: 20px;
+  opacity: 80%;
 }
 .d3 {
   width: 300px;
   height: 900px;
   border-radius: 500em 500em 0 0;
-  background: #4dd7c3;
+  background: var(--color_blue);
   position: absolute;
   left: 100px;
-  top: 400px;
+  top: 360px;
+}
+
+.avatar {
+  width: 270px;
+  height: 270px;
+  background: #f1b4c6;
+  border-radius: 50%;
+  position: absolute;
+  left: 115px;
+  top: 50px;
+}
+.header {
+  padding-left: 500px;
+}
+.name {
+  color: var(--color_burgundy);
+  font-size: 36px;
+  font-weight: 900;
+  word-spacing: 15px;
+  margin: 20px 0 10px 0;
+}
+.position {
+  color: var(--color_text_dark);
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.skills {
+  color: var(--color_text_dark);
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.main {
+  margin-left: 500px;
+}
+.courses_head {
+  color: var(--color_burgundy);
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 900;
+}
+.course {
+  display: flex;
 }
