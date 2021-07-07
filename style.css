@@ -178,7 +178,27 @@ h6 {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 900;
+  margin-bottom: 10px;
 }
 .course {
   display: flex;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: var(--color_text_dark);
+  font-weight: 400;
+}
+.course_partition {
+  border-left: 2px solid var(--color_text_dark);
+  margin: 0 10px;
+  height: 17px;
+}
+.course_name,
+.course_years,
+.course_community {
+  padding-top: 1px;
+  /* color: var(--color_text_dark); */
+}
+.course_name {
+  font-weight: 500;
+  padding-right: 5px;
 }
