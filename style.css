@@ -83,6 +83,7 @@ h6 {
   --color_burgundy: #ec5136;
   --color_yellow: #fadd34;
   --color_blue: #4dd7c3;
+  --color_deep_blue: #0026f6;
   --color_text_dark: #50595b;
   --color_text_light: #ffffff;
 }
@@ -130,12 +131,12 @@ h6 {
 }
 .d3 {
   width: 300px;
-  height: 900px;
   border-radius: 500em 500em 0 0;
   background: var(--color_blue);
   position: absolute;
   left: 100px;
   top: 360px;
+  padding-bottom: 30px;
 }
 
 .avatar {
@@ -173,32 +174,85 @@ h6 {
 .main {
   margin-left: 500px;
 }
-.courses_head {
+.main_content_block {
+  margin-top: 25px;
+}
+.main_content_block_head {
   color: var(--color_burgundy);
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 900;
   margin-bottom: 10px;
+  word-spacing: 10px;
 }
-.course {
+.marker {
+  color: var(--color_burgundy);
+}
+.course,
+.institution,
+.job,
+.job_position {
   display: flex;
   margin-bottom: 10px;
   font-size: 16px;
   color: var(--color_text_dark);
   font-weight: 400;
 }
-.course_partition {
+.partition {
   border-left: 2px solid var(--color_text_dark);
   margin: 0 10px;
   height: 17px;
 }
 .course_name,
 .course_years,
-.course_community {
+.course_community,
+.institution_name,
+.institution_years,
+.job_name,
+.job_years {
   padding-top: 1px;
   /* color: var(--color_text_dark); */
 }
-.course_name {
+.course_name,
+.institution_name,
+.job_name {
   font-weight: 500;
-  padding-right: 5px;
+  padding: 0 5px;
+}
+.job_block {
+  margin-bottom: 20px;
+}
+.job {
+  margin-bottom: 5px;
+}
+.contacts_head,
+.languages_head {
+  color: var(--color_deep_blue);
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 900;
+  text-align: center;
+  margin: 50px 0 20px 0;
+  word-spacing: 10px;
+}
+.contact,
+.language {
+  color: var(--color_text_light);
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  display: flex;
+  margin-left: 25px;
+}
+.contact_text,
+.language_text {
+  padding-left: 5px;
+}
+.marker_contact,
+.marker_language {
+  color: var(--color_yellow);
+  /* color: var(--color_burgundy); */
+}
+.languages_head {
+  margin-top: 30px;
 }
