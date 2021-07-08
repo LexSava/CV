@@ -35,6 +35,7 @@ body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  cursor: default;
 }
 input,
 button,
@@ -94,9 +95,14 @@ h6 {
   max-width: 1420px;
   height: 100%;
   /* background-color: #50595b; */
-  overflow: hidden;
   position: relative;
   margin: 0 auto;
+}
+.background_shapes {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 .d1 {
   width: 800px;
@@ -119,14 +125,14 @@ h6 {
   bottom: 0px;
 }
 .d2 {
-  width: 330px;
-  height: 165px;
+  width: 310px;
+  height: 155px;
   border-radius: 50% 50% 0 0 / 100% 100% 0 0;
   overflow: hidden;
   background: var(--color_burgundy);
   position: absolute;
   left: 85px;
-  top: 20px;
+  top: 10px;
   opacity: 80%;
 }
 .d3 {
@@ -135,18 +141,19 @@ h6 {
   background: var(--color_blue);
   position: absolute;
   left: 100px;
-  top: 360px;
+  top: 310px;
   padding-bottom: 30px;
 }
 
 .avatar {
-  width: 270px;
-  height: 270px;
+  width: 250px;
+  height: 250px;
   background: #f1b4c6;
   border-radius: 50%;
   position: absolute;
   left: 115px;
-  top: 50px;
+  top: 40px;
+  overflow: hidden;
 }
 .header {
   padding-left: 500px;
@@ -156,7 +163,8 @@ h6 {
   font-size: 36px;
   font-weight: 900;
   word-spacing: 15px;
-  margin: 20px 0 10px 0;
+  margin: 0 0 10px 0;
+  padding-top: 20px;
 }
 .position {
   color: var(--color_text_dark);
@@ -175,7 +183,7 @@ h6 {
   margin-left: 500px;
 }
 .main_content_block {
-  margin-top: 25px;
+  margin-top: 35px;
 }
 .main_content_block_head {
   color: var(--color_burgundy);
@@ -226,17 +234,21 @@ h6 {
   margin-bottom: 5px;
 }
 .contacts_head,
-.languages_head {
-  color: var(--color_deep_blue);
+.languages_head,
+.hobbies_head {
+  color: var(--color_yellow);
+  /* color: var(--color_deep_blue); */
+  /* color: var(--color_burgundy); */
   text-transform: uppercase;
   font-size: 20px;
-  font-weight: 900;
+  font-weight: 800;
   text-align: center;
   margin: 50px 0 20px 0;
   word-spacing: 10px;
 }
 .contact,
-.language {
+.language,
+.hobby {
   color: var(--color_text_light);
   font-size: 16px;
   font-weight: 400;
@@ -245,14 +257,20 @@ h6 {
   margin-left: 25px;
 }
 .contact_text,
-.language_text {
+.language_text,
+.hobby_text {
   padding-left: 5px;
+  padding-right: 5px;
 }
 .marker_contact,
-.marker_language {
+.marker_language,
+.marker_hobby {
   color: var(--color_yellow);
   /* color: var(--color_burgundy); */
 }
 .languages_head {
   margin-top: 30px;
+}
+.avatar_foto {
+  width: 100%;
 }
