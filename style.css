@@ -164,7 +164,7 @@ h6 {
   font-weight: 900;
   word-spacing: 15px;
   margin: 0 0 10px 0;
-  padding-top: 20px;
+  padding-top: 35px;
 }
 .position {
   color: var(--color_text_dark);
@@ -181,9 +181,10 @@ h6 {
 }
 .main {
   margin-left: 500px;
+  position: absolute;
 }
 .main_content_block {
-  margin-top: 35px;
+  margin-top: 40px;
 }
 .main_content_block_head {
   color: var(--color_burgundy);
@@ -199,7 +200,8 @@ h6 {
 .course,
 .institution,
 .job,
-.job_position {
+.job_position,
+.certificate {
   display: flex;
   margin-bottom: 10px;
   font-size: 16px;
@@ -227,10 +229,12 @@ h6 {
   font-weight: 500;
   padding: 0 5px;
 }
-.job_block {
+.job_block,
+.course_block {
   margin-bottom: 20px;
 }
-.job {
+.job,
+.course {
   margin-bottom: 5px;
 }
 .contacts_head,
@@ -268,9 +272,14 @@ h6 {
   color: var(--color_yellow);
   /* color: var(--color_burgundy); */
 }
-.languages_head {
+.languages_head,
+.hobbies_head {
   margin-top: 30px;
 }
 .avatar_foto {
   width: 100%;
+}
+.certificate,
+.job_position {
+  margin-left: 13px;
 }
