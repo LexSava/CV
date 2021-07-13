@@ -105,12 +105,12 @@ h6 {
   height: 100%;
 }
 .d1 {
-  width: 800px;
-  height: 800px;
+  width: 700px;
+  height: 700px;
   border-radius: 50%;
   border: 200px solid var(--color_yellow);
   position: absolute;
-  left: -500px;
+  left: -400px;
   top: -85px;
   opacity: 80%;
 }
