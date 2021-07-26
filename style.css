@@ -524,7 +524,7 @@ html {
 }
 @media screen and (max-width: 580px) {
   .background_shapes {
-    height: 100%;
+    height: 170%;
   }
   .certificate {
     width: min-content;
