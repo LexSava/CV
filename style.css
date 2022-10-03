@@ -86,9 +86,9 @@ html {
   --box_shadow_btn: 0px 4px 4px rgba(0, 0, 0, 0.25);
   --page_size: 1440px;
   --content_size: 1200px;
-  --color_burgundy: #fb6542;
-  --color_yellow: #ffbb00;
-  --color_blue: #4d85bd;
+  --color_burgundy: #ec5136;
+  --color_yellow: #fadd34;
+  --color_blue: #4dd7c3;
   --color_deep_blue: #0026f6;
   --color_text_dark: #50595b;
   --color_text_light: #ffffff;
@@ -136,19 +136,18 @@ html {
   overflow: hidden;
   background: var(--color_burgundy);
   position: absolute;
-  left: 130px;
+  left: 85px;
   top: 10px;
   opacity: 80%;
 }
 .d3 {
-  width: 370px;
-  border-radius: 500em 500em 500em 500em;
+  width: 300px;
+  border-radius: 500em 500em 0 0;
   background: var(--color_blue);
   position: absolute;
   left: 100px;
   top: 310px;
-  padding-bottom: 10%;
-  padding-top: 3%;
+  padding-bottom: 30px;
 }
 
 .avatar {
@@ -157,7 +156,7 @@ html {
   background: #f1b4c6;
   border-radius: 50%;
   position: absolute;
-  left: 160px;
+  left: 115px;
   top: 40px;
   overflow: hidden;
 }
@@ -223,9 +222,6 @@ html {
   color: var(--color_text_dark);
   font-weight: 400;
 }
-.job {
-  flex-wrap: wrap;
-}
 .partition {
   border-left: 2px solid var(--color_text_dark);
   margin: 0 10px;
@@ -241,16 +237,12 @@ html {
   padding-top: 1px;
   /* color: var(--color_text_dark); */
 }
-.job_name_wrapper {
-  display: flex;
-}
 .course_name,
 .institution_name,
 .job_name {
   font-weight: 500;
   padding: 0 5px;
 }
-
 .job_block,
 .course_block {
   margin-bottom: 20px;
@@ -343,7 +335,9 @@ html {
   .certificate {
     margin-left: 13px;
   }
- 
+  .d3 {
+    padding-bottom: 15%;
+  }
 }
 @media screen and (max-width: 1059px) {
   .header {
